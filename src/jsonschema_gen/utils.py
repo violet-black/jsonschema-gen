@@ -3,8 +3,7 @@
 import inspect
 import sys
 from textwrap import dedent
-from typing import (Any, Type, Union, _GenericAlias,  # noqa: magic
-                    _TypedDictMeta)
+from typing import Any, Type, Union, _GenericAlias, _TypedDictMeta  # noqa: magic
 
 __all__ = [
     "NoneType",
@@ -67,11 +66,7 @@ def is_typeddict(value, /) -> bool:
 
 
 def is_namedtuple(value, /) -> bool:
-    return (
-        inspect.isclass(value)
-        and issubclass(value, tuple)
-        and hasattr(value, "_fields")
-    )
+    return inspect.isclass(value) and issubclass(value, tuple) and hasattr(value, "_fields")
 
 
 def is_union(value, /) -> bool:

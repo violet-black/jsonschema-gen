@@ -15,11 +15,19 @@ from uuid import UUID, SafeUUID
 from weakref import proxy
 
 import jsonschema_gen.schema as j
-from jsonschema_gen.utils import (NoneType, compatible_py39, compatible_py310,
-                                  compatible_py311, get_args,
-                                  get_function_summary, get_generic_alias,
-                                  get_origin, is_namedtuple, is_typeddict,
-                                  is_union)
+from jsonschema_gen.utils import (
+    NoneType,
+    compatible_py39,
+    compatible_py310,
+    compatible_py311,
+    get_args,
+    get_function_summary,
+    get_generic_alias,
+    get_origin,
+    is_namedtuple,
+    is_typeddict,
+    is_union,
+)
 
 __all__ = [
     "TYPES",
@@ -115,9 +123,7 @@ class Parser:
                 _method_map[name] = self.parse_function(value, cls)
         return _method_map
 
-    def parse_function(
-        self, f: t.Callable, /, cls: t.Optional[t.Type] = None
-    ) -> FunctionAnnotation:
+    def parse_function(self, f: t.Callable, /, cls: t.Optional[t.Type] = None) -> FunctionAnnotation:
         """Parse method or function arguments and return type into jsonschema style annotations."""
         sign = inspect.signature(f)
         params, required = {}, []
@@ -141,9 +147,7 @@ class Parser:
                 continue
 
             if arg.kind == _ParameterKind.POSITIONAL_ONLY:
-                raise IncompatibleTypesError(
-                    "Positional only arguments cannot be converted to a JSONSchema object."
-                )
+                raise IncompatibleTypesError("Positional only arguments cannot be converted to a JSONSchema object.")
 
             if type(arg.annotation) is t.TypeVar:
                 if cls:
@@ -391,13 +395,9 @@ class DictParser(TypeParser):
                 str,
                 bytes,
             ):
-                raise IncompatibleTypesError(
-                    f"Dictionary keys must be strings, got {annotation.__args__[0]}"
-                )
+                raise IncompatibleTypesError(f"Dictionary keys must be strings, got {annotation.__args__[0]}")
             if annotation.__args__[1] not in (t.Any, ...):
-                properties = {
-                    "^.+$": self._parser.parse_annotation(annotation.__args__[1])
-                }
+                properties = {"^.+$": self._parser.parse_annotation(annotation.__args__[1])}
         return self.annotation(patternProperties=properties)
 
 
@@ -450,18 +450,12 @@ class NamedTupleParser(TypeParser):
         annotations = getattr(annotation, "__annotations__", {})
         items = []
         for key in annotation._fields:  # noqa: no public attr
-            arg = (
-                self._parser.parse_annotation(annotations[key])
-                if key in annotations
-                else j.JSONSchemaObject()
-            )
+            arg = self._parser.parse_annotation(annotations[key]) if key in annotations else j.JSONSchemaObject()
             arg.title = key
             if key in defaults:
                 arg.default = defaults[key]
             items.append(arg)
-        return self.annotation(
-            prefixItems=items, description=annotation.__doc__, title=title
-        )
+        return self.annotation(prefixItems=items, description=annotation.__doc__, title=title)
 
 
 class EnumValueParser(TypeParser):
@@ -491,9 +485,7 @@ class EnumTypeParser(TypeParser):
         title = annotation.__name__
         return self.annotation(
             description=annotation.__doc__,
-            enum=[
-                v.value for k, v in annotation._member_map_.items()
-            ],  # noqa: no public attr
+            enum=[v.value for k, v in annotation._member_map_.items()],  # noqa: no public attr
             title=title,
         )
 
@@ -525,9 +517,5 @@ class DataclassParser(TypeParser):
 
 
 for value in tuple(locals().values()):
-    if (
-        inspect.isclass(value)
-        and issubclass(value, TypeParser)
-        and value is not TypeParser
-    ):
+    if inspect.isclass(value) and issubclass(value, TypeParser) and value is not TypeParser:
         TYPES.append(value)

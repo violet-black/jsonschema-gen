@@ -3,8 +3,7 @@
 # pylint: disable=C0103
 
 from dataclasses import dataclass, field
-from typing import (Any, Collection, Dict, List, Literal, Mapping, Protocol,
-                    TypeVar)
+from typing import Any, Collection, Dict, List, Literal, Mapping, Protocol, TypeVar
 
 __all__ = (
     "JSONSchemaObject",
@@ -297,9 +296,7 @@ class Array(JSONSchemaType):
     """
 
     items: JSONSchemaType = None  #: item type for a strict typed array
-    prefixItems: Collection[JSONSchemaType] = (
-        None  #: a List of fixed object positions for a tuple type
-    )
+    prefixItems: Collection[JSONSchemaType] = None  #: a List of fixed object positions for a tuple type
     contains: JSONSchemaType = None  #: must contain this type of object
     additionalItems: bool = None  #: allow additional items
     uniqueItems: bool = None  #: specify an array as a set type
