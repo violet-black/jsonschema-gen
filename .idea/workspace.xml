@@ -4,31 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2ee97920-8b5e-4a84-aa1f-2cc27b697e0d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/source/customization.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/guide.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/license.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/parser.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/quickstart.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/schema.rst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/source/type_map.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsonschema-gen.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsonschema-gen.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/docs/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/source/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/conf.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/source/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/docs/source/index.rst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsonschema_gen/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsonschema_gen/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsonschema_gen/parsers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsonschema_gen/parsers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsonschema_gen/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsonschema_gen/schema.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsonschema_gen/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/jsonschema_gen/utils.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/setup.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_annotations.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_annotations.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_annotations_310.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_annotations_310.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_annotations_311.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_annotations_311.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_annotations_39.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_annotations_39.py" afterDir="false" />
-    </list>
+    <list default="true" id="2ee97920-8b5e-4a84-aa1f-2cc27b697e0d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,8 +59,9 @@
     "Python tests.pytest for tests.test_annotations.test_types.executor": "Debug",
     "Python tests.pytest in pip install -e . && pytest.executor": "Run",
     "Python tests.pytest in tests.executor": "Run",
-    "Python tests.pytest.executor": "Coverage",
+    "Python tests.pytest.executor": "Run",
     "Python.__init__.executor": "Run",
+    "Python.build.executor": "Run",
     "Python.parsers.executor": "Run",
     "Python.test.executor": "Coverage",
     "Python.utils.executor": "Run",
@@ -95,6 +72,7 @@
     "last_opened_file_path": "/Users/nidhoggr/Projects/Personal/jsonschema-gen/docs/source",
     "tox.Tox.executor": "Run",
     "tox.tox: run on py310.executor": "Run",
+    "tox.tox: run on py38 (1).executor": "Run",
     "tox.tox: run on py38.executor": "Run",
     "tox.tox: run on py39.executor": "Run",
     "tox.tox: run on tests.test_annotations.test_types. (1).executor": "Run",
@@ -113,7 +91,7 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
-  <component name="RunManager" selected="tox.tox: run on py38 (1)">
+  <component name="RunManager" selected="Python tests.pytest">
     <configuration name="build" type="PythonConfigurationType" factoryName="Python">
       <module name="jsonschema-gen" />
       <option name="ENV_FILES" value="" />
@@ -276,7 +254,7 @@
       <workItem from="1712316615696" duration="9522000" />
       <workItem from="1712476850496" duration="6000" />
       <workItem from="1712476875426" duration="5041000" />
-      <workItem from="1712497765295" duration="14574000" />
+      <workItem from="1712497765295" duration="15125000" />
     </task>
     <servers />
   </component>
@@ -293,6 +271,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/jsonschema_gen$tox__run_on_tests_test_annotations_test_types_.coverage" NAME="tox: run on tests.test_annotations.test_types. Coverage Results" MODIFIED="1712323594632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/jsonschema_gen$tox__run_on_py38__1_.coverage" NAME="tox: run on py38 (1) Coverage Results" MODIFIED="1712513059416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/jsonschema_gen$tox__run_on_py310.coverage" NAME="tox: run on py310 Coverage Results" MODIFIED="1712323001635" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/jsonschema_gen$Doctests_in_JSONSchemaObject.coverage" NAME="Doctests in JSONSchemaObject Coverage Results" MODIFIED="1712479685388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jsonschema_gen" />
     <SUITE FILE_PATH="coverage/jsonschema_gen$Doctests_in_Null.coverage" NAME="Doctests in Null Coverage Results" MODIFIED="1712479561705" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jsonschema_gen" />
@@ -303,16 +282,17 @@
     <SUITE FILE_PATH="coverage/jsonschema_gen$pytest_in_tests.coverage" NAME="pytest Coverage Results" MODIFIED="1712480808170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/jsonschema_gen$Doctests_in_Enum.coverage" NAME="Doctests in Enum Coverage Results" MODIFIED="1712479655109" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jsonschema_gen" />
     <SUITE FILE_PATH="coverage/jsonschema_gen$Doctests_in_Object.coverage" NAME="Doctests in Object Coverage Results" MODIFIED="1712479810092" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jsonschema_gen" />
-    <SUITE FILE_PATH="coverage/jsonschema_gen$pytest.coverage" NAME="pytest Coverage Results" MODIFIED="1712512350333" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/jsonschema_gen$pytest.coverage" NAME="pytest Coverage Results" MODIFIED="1712513230032" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/jsonschema_gen$Doctests_in_Not.coverage" NAME="Doctests in Not Coverage Results" MODIFIED="1712479886550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jsonschema_gen" />
     <SUITE FILE_PATH="coverage/jsonschema_gen$Doctests_in_parsers.coverage" NAME="Doctests in parsers Coverage Results" MODIFIED="1712512399572" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/jsonschema_gen" />
     <SUITE FILE_PATH="coverage/jsonschema_gen$tox__run_on_py39.coverage" NAME="tox: run on py39 Coverage Results" MODIFIED="1712323344170" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/jsonschema_gen$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1712265992846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jsonschema_gen" />
     <SUITE FILE_PATH="coverage/jsonschema_gen$Doctests_in_Array.coverage" NAME="Doctests in Array Coverage Results" MODIFIED="1712479750699" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jsonschema_gen" />
-    <SUITE FILE_PATH="coverage/jsonschema_gen$Tox.coverage" NAME="Tox Coverage Results" MODIFIED="1712512440158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/jsonschema_gen$Tox.coverage" NAME="Tox Coverage Results" MODIFIED="1712513100146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/jsonschema_gen$Doctests_in_AnyOf.coverage" NAME="Doctests in AnyOf Coverage Results" MODIFIED="1712479844530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jsonschema_gen" />
     <SUITE FILE_PATH="coverage/jsonschema_gen$Doctests_in_Date.coverage" NAME="Doctests in Date Coverage Results" MODIFIED="1712479474582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jsonschema_gen" />
     <SUITE FILE_PATH="coverage/jsonschema_gen$Doctests_in_GUID.coverage" NAME="Doctests in GUID Coverage Results" MODIFIED="1712479133200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jsonschema_gen" />
+    <SUITE FILE_PATH="coverage/jsonschema_gen$build.coverage" NAME="build Coverage Results" MODIFIED="1712512889209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/jsonschema_gen$Doctests_in_Parser.coverage" NAME="Doctests in Parser Coverage Results" MODIFIED="1712508560068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jsonschema_gen" />
     <SUITE FILE_PATH="coverage/jsonschema_gen$Doctests_in_Const.coverage" NAME="Doctests in Const Coverage Results" MODIFIED="1712479627566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jsonschema_gen" />
     <SUITE FILE_PATH="coverage/jsonschema_gen$Doctests_in_schema.coverage" NAME="Doctests in schema Coverage Results" MODIFIED="1712479985837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/jsonschema_gen" />
