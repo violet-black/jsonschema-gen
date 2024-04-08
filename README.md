@@ -9,7 +9,7 @@
 **jsonschema-gen** is Python type hints parser which can convert function and method annotations
 into [JSONSchema](https://json-schema.org) objects.
 
-- Pythonic [classes](https://jsonschema-gen.readthedocs.io/reference.html) for JSONSchema types
+- Pythonic [classes](https://jsonschema-gen.readthedocs.io/schema.html) for JSONSchema types
 - Extensive type coverage: TypedDict, Generic, NewType, etc.
 - No external dependencies
 
