@@ -1,7 +1,7 @@
 [![pypi](https://img.shields.io/pypi/v/jsonschema-gen.svg)](https://pypi.python.org/pypi/jsonschema-gen/)
 [![docs](https://readthedocs.org/projects/jsonschema-gen/badge/?version=latest&style=flat)](https://jsonschema-gen.readthedocs.io)
 [![codecov](https://codecov.io/gh/violet-black/jsonschema-gen/graph/badge.svg?token=FEUUMQELFX)](https://codecov.io/gh/violet-black/jsonschema-gen)
-[![tests](https://github.com/violet-black/jsonschema-gen/actions/workflows/CI.yaml/badge.svg)](https://github.com/violet-black/jsonschema-gen/actions/workflows/CI.yaml)
+[![tests](https://github.com/violet-black/jsonschema-gen/actions/workflows/tests.yaml/badge.svg)](https://github.com/violet-black/jsonschema-gen/actions/workflows/tests.yaml)
 [![code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 [![python](https://img.shields.io/pypi/pyversions/uvlog.svg)](https://pypi.python.org/pypi/jsonschema-gen/)
